@@ -36,4 +36,4 @@ workflow automation.
 ## Connect
 
 - GitHub: https://github.com/veenatanneeru
-- LinkedIn: Add your LinkedIn profile URL here
+- LinkedIn: https://www.linkedin.com/in/veenatanneeru/
