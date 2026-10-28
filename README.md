@@ -1,32 +1,39 @@
-# Veena Tanneeru — AI Engineer Portfolio
+# Veena Tanneeru | AI Engineer
 
-Responsive, light/minimal portfolio starter built with plain HTML, CSS, and JavaScript. No build step or package installation required.
+Welcome to my AI engineering portfolio. I focus on building practical AI
+applications using machine learning, Generative AI, retrieval-augmented
+generation (RAG), and intelligent agent workflows.
 
-## Included
-- Responsive page, mobile navigation, and project filters
-- Project detail dialogs for fraud-agent plan and sentiment case study
-- Existing AI Knowledge Assistant repository link
-- About, skills, and contact sections
-- GitHub Pages-ready static files
+## Featured Projects
 
-## Run locally
-Open `index.html` in a browser, or run `python3 -m http.server 8000` in this folder and visit http://localhost:8000.
+### AI Knowledge Assistant
+A document question-answering application designed to retrieve relevant
+information and generate responses using an LLM.
 
-## Customize before publishing
-1. Replace the generic LinkedIn URL in `index.html` with your exact profile URL.
-2. Review skills and descriptions for accuracy.
-3. Fraud Detection is marked **In development** and is not yet a completed implementation.
-4. Member Sentiment is marked **Case study**; keep only details you can discuss publicly and remove confidential information.
-5. Avoid putting personal addresses or other sensitive information on a public site.
+**Technologies:** Python, FastAPI, Sentence Transformers, Ollama
 
-## Publish with GitHub Pages
-1. Create a repository named `veenatanneeru.github.io` (if available).
-2. Upload `index.html`, `styles.css`, `script.js`, and `README.md` to its root.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**, choose `main` and `/(root)`, then save.
-5. Wait for deployment. The site should be available at `https://veenatanneeru.github.io`.
+[View on GitHub](https://github.com/veenatanneeru/ai-knowledge-assistant)
 
-Official guide: https://docs.github.com/en/pages/quickstart
+### Fraud Detection & Investigation Agent
+An AI project in development focused on identifying suspicious transaction
+patterns, generating risk explanations, and supporting human-led investigations.
 
-## Next milestone
-Build the Fraud Detection & Investigation Agent in a separate repository, then add its live demo and source link here after implementation and testing.
+**Planned technologies:** Python, scikit-learn, FastAPI, PostgreSQL
+
+### Member Sentiment Intelligence
+A case study exploring feedback classification, retrieval, and AI-assisted
+workflow automation.
+
+## Technical Interests
+
+- Machine Learning and anomaly detection
+- Large Language Models (LLMs)
+- Retrieval-Augmented Generation (RAG)
+- AI agents and tool calling
+- Model evaluation and responsible AI
+- Python APIs and AI application engineering
+
+## Connect
+
+- GitHub: https://github.com/veenatanneeru
+- LinkedIn: Add your LinkedIn profile URL here
