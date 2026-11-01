@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Veena Tanneeru – Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600;800&family=Pinyon+Script&display=swap">
+<style>
+:root{--bg:#000;--text:#fff;--mut:#b9b6c6;--line:#2a2a2a;--panel:#0c0c0c;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--text:#fff;--mut:#b9b6c6;--line:#2a2a2a;--panel:#0c0c0c}}
+:root[data-theme="dark"]{--bg:#000;--text:#fff;--mut:#b9b6c6;--line:#2a2a2a;--panel:#0c0c0c}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 90px);background:#000}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:300 17px/1.6 Outfit,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#000;z-index:30}
+a{color:inherit}
+nav{position:sticky;top:calc(env(safe-area-inset-top,0px) + 14px);z-index:31;margin:14px auto 0;max-width:1100px;width:calc(100% - 32px);background:rgba(0,0,0,.88);backdrop-filter:blur(8px);border-radius:14px;display:flex;align-items:center;gap:8px 30px;flex-wrap:wrap;padding:16px 28px}
+nav .logo{font:400 30px/1 "Pinyon Script",cursive;margin-right:auto;text-decoration:none}
+nav a:not(.logo){text-transform:uppercase;font-weight:400;font-size:15px;text-decoration:none;letter-spacing:.02em}
+nav a:not(.logo):hover{opacity:.6}
+.hero{position:relative;margin-top:-90px;padding:200px 24px 120px;text-align:center;overflow:hidden;background:radial-gradient(120% 70% at 85% 105%,#ff7a45 0%,#d4455f 28%,rgba(120,40,120,.7) 48%,transparent 70%),radial-gradient(90% 60% at 10% 110%,#7a2b7a 0%,transparent 60%),radial-gradient(70% 50% at 100% 35%,#243b7a 0%,transparent 70%),#000}
+.hero small{font-size:20px;font-weight:300}
+.hero h1{font-weight:800;font-size:clamp(40px,8.4vw,108px);line-height:.98;letter-spacing:-.035em;margin:18px auto 30px;max-width:1150px}
+.hero h1 i{font:400 1.12em/.9 "Pinyon Script",cursive;letter-spacing:0;font-style:normal;margin-right:.12em}
+.hero p{max-width:900px;margin:0 auto 34px;font-size:clamp(17px,2vw,24px);line-height:1.5}
+.hero p b{font-weight:600}
+.clouds{display:flex;gap:44px;justify-content:center;font-weight:800;font-size:30px;letter-spacing:-.02em;opacity:.8;margin-bottom:38px;flex-wrap:wrap}
+.btn{display:inline-block;border:1.5px solid #fff;border-radius:999px;padding:18px 42px;text-transform:uppercase;font-weight:600;font-size:16px;text-decoration:none;letter-spacing:.01em}
+.btn:hover{background:#fff;color:#000}
+section.s{max-width:1200px;margin:0 auto;padding:110px 24px 30px}
+.head{display:grid;grid-template-columns:230px 1fr;gap:24px;align-items:start}
+.head .lbl{text-transform:uppercase;font-weight:300;font-size:20px;line-height:1.25}
+.big{text-transform:uppercase;font-weight:200;font-size:clamp(30px,5.4vw,76px);line-height:1.02;letter-spacing:-.03em;margin:0}
+.big b{font-weight:800}
+.head p{color:var(--mut);font-size:16px;max-width:760px;margin:22px 0 0}
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);margin:70px -24px 0}
+.tile{position:relative;min-height:380px;padding:34px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.tile:nth-child(4n+1){background:linear-gradient(135deg,#111,#2e2a33 60%,#0a0a0a)}
+.tile:nth-child(4n+2){background:linear-gradient(135deg,#0a2a52,#17407a 55%,#e8873a)}
+.tile:nth-child(4n+3){background:linear-gradient(135deg,#ee5a2b,#b02f6a 55%,#6a1a9a)}
+.tile:nth-child(4n+4){background:linear-gradient(135deg,#2a1f5a,#6b55b0 60%,#16122e)}
+.tile .tag{align-self:flex-start;border:1px solid rgba(255,255,255,.7);border-radius:999px;padding:3px 12px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;font-weight:600;margin-bottom:14px}
+.tile h3{margin:0 0 8px;text-transform:uppercase;font-weight:800;font-size:clamp(22px,2.6vw,34px);line-height:1.05;letter-spacing:-.02em}
+.tile p{margin:0 0 10px;font-size:15.5px;line-height:1.5;color:rgba(255,255,255,.92)}
+.tile .st{font-size:13px;opacity:.75;text-transform:uppercase;letter-spacing:.05em}
+.tile a{font-weight:600;margin-top:10px;display:inline-block}
+.center{text-align:center}
+.center small{text-transform:uppercase;font-size:20px;font-weight:300}
+.rule{height:8px;background:#fff;margin:22px 0 40px}
+.tabs{display:flex;justify-content:space-around;flex-wrap:wrap;gap:10px;margin-bottom:34px}
+.tabs button{background:none;border:0;color:var(--text);font:300 22px Outfit,sans-serif;cursor:pointer;opacity:.5;padding:6px 10px}
+.tabs button.on,.tabs button:hover{opacity:1}
+.panel{display:none;padding:44px;border-radius:6px;background:linear-gradient(135deg,#ee5a2b,#b02f6a 60%,#6a1a9a);text-align:left}
+.panel.on{display:block}
+.panel .box{background:#f4f1f3;color:#1a1a1a;border-radius:18px;padding:36px;max-width:900px;margin:0 auto}
+.panel h3{margin:0 0 4px;font-weight:800;font-size:clamp(24px,3vw,38px);color:#e8481f;line-height:1.1;letter-spacing:-.02em}
+.panel .when{font-size:17px;margin-bottom:14px}
+.panel ul{margin:0;padding-left:20px;font-size:17px;line-height:1.5}
+.panel li{margin-bottom:8px;color:#2b2b2b}
+.edu{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.edu .box{border:1px solid var(--line);border-radius:12px;padding:30px;background:var(--panel)}
+.edu h3{margin:0 0 6px;font-weight:600;font-size:22px}
+.edu p{margin:0 0 8px;color:var(--mut);font-size:16px}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:56px}
+.skills div{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px}
+.skills h3{margin:0 0 10px;text-transform:uppercase;font-weight:600;font-size:19px;letter-spacing:.01em}
+.skills p{margin:0;color:var(--mut);font-size:15.5px;line-height:1.55}
+footer{max-width:1200px;margin:90px auto 0;padding:80px 24px 40px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:40px}
+footer .big{font-size:clamp(26px,3.6vw,48px);max-width:640px;line-height:1.08}
+footer .btn{margin-top:36px}
+footer .cn{text-transform:uppercase;font-size:20px}
+footer .ic{display:flex;gap:26px;margin-top:12px;text-transform:uppercase;font-weight:600;font-size:15px}
+.end{max-width:1200px;margin:0 auto;border-top:1px solid #fff;padding:20px 24px 50px;font-size:13px;color:var(--mut)}
+#top{position:fixed;right:26px;bottom:calc(env(safe-area-inset-bottom,0px) + 22px);width:44px;height:44px;border:0;background:none;color:#fff;font-size:30px;cursor:pointer;z-index:25;mix-blend-mode:difference}
+#dot{position:fixed;left:0;top:0;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;background:#fff;color:#000;font-weight:600;display:none;align-items:center;justify-content:center;pointer-events:none;z-index:40;font-size:15px;text-transform:uppercase}
+@media (max-width:760px){.head{grid-template-columns:1fr}.tiles{grid-template-columns:1fr}.edu,.skills{grid-template-columns:1fr}.panel{padding:18px}.panel .box{padding:22px}.hero{padding-top:170px}}
+</style>
+</head>
+<body>
+<nav><a class="logo" href="#top0">Veena</a><a href="#projects">Projects</a><a href="#github">GitHub</a><a href="#experience">Work Experience</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+
+<header class="hero" id="top0">
+<small>Heyy, I am VEENA, and I’m exploring</small>
+<h1><i>Applied AI</i> – Agentic Systems with GenAI &amp; the Cloud</h1>
+<p><b>Veena Tanneeru</b> – an AI Engineer with an M.S. in Computer &amp; Information Sciences from Concordia University Wisconsin and a B.Tech in Computer Science &amp; Engineering. I build agentic, retrieval-based and optimization-driven systems for multi-site franchise operations. Before that, I worked as a Data Scientist at Amazon. Check out my portfolio down here! ↓</p>
+<div class="clouds"><span>Azure</span><span>aws</span><span>GCP</span></div>
+<a class="btn" href="https://drive.google.com/file/d/1Dr1kbxMad0DJhQYalZ8SvxH5ZPldGsYb/view?usp=share_link" target="_blank" rel="noopener" id="resume">Download my resume ↓</a>
+</header>
+
+<section class="s" id="projects">
+<div class="head"><div class="lbl">See what’s<br>different</div>
+<div><h2 class="big"><b>Projects</b> — AI for franchise operations</h2>
+<p>Work built at Unifix Technology for a Planet Fitness franchise group. If a system can plan, check and explain its own work, people can trust it with real operations. That’s the aim.</p></div></div>
+<div class="tiles">
+<div class="tile"><span class="tag">In testing</span><h3>Ops Manager Scheduling AI</h3><p>Agentic scheduler with Google OR-Tools CP-SAT as the deterministic core. Automates monthly schedules for 15 ops managers across 134 clubs (US + Canada), replacing about a week of manual work each month. Encodes 75+ business rules.</p><div class="st">Python · OR-Tools · Flask · OpenAI API</div></div>
+<div class="tile"><span class="tag">Live pilot</span><h3>Member Sentiment Intelligence</h3><p>LLM pipeline that classifies member feedback for 134+ clubs, with human-review routing, hybrid retrieval and reranking, a Medallion data architecture and PII pseudonymization. Sends automated executive briefings.</p><div class="st">Claude · Streamlit · SQLite · Pandera</div></div>
+<div class="tile"><span class="tag">Merged · RFP bid</span><h3>Equipment Failure Forecaster</h3><p>Kaplan-Meier survival analysis over about 26K equipment tickets. Math owns every number, AI only narrates, and fabrication guards reject invented figures. Hardened FastAPI backend with retries and degraded paths.</p><div class="st">FastAPI · Survival analysis · LLM guards</div></div>
+<div class="tile"><span class="tag">Daily production</span><h3>Matrix &amp; Break Check Automation</h3><p>Labor-compliance system for 129 clubs that replaces about 3 hours a day of manual work. Email-triggered: ingests Paychex reports, runs checks and re-checks, and sends Excel reports with AI-written summaries.</p><div class="st">Paychex · Mailgun · Claude Sonnet</div></div>
+<div class="tile"><span class="tag">Pilot</span><h3>Club Assistant (RAG chatbot)</h3><p>Grounded Q&amp;A bot for club managers and front-desk staff built on ticket history and internal docs. Multi-turn, answers only from company data, escalates instead of guessing, and blocks off-topic and adversarial questions.</p><div class="st">RAG · Escalation · Answer logging</div></div>
+<div class="tile"><span class="tag">Phase 1 working</span><h3>Lease Intelligence</h3><p>AI engine that reads 141 commercial leases and routes each maintenance ticket as landlord or tenant responsibility, auto-resolving or sending to review with a verbatim clause citation. Repaired corrupted OCR on 16 of 20 affected leases.</p><div class="st">Claude Files API · Extended thinking · Tesseract</div></div>
+<div class="tile"><span class="tag">PoC</span><h3>Visual Operations Intelligence</h3><p>Computer vision proof of concept that detects front-desk staff presence and customer wait times from existing security cameras. Privacy-by-design, with research on biometric privacy law and a scaling plan for about 137 locations.</p><div class="st">YOLO · RTSP · OpenCV</div></div>
+<div class="tile"><span class="tag">Monthly tool · Corporate RFP</span><h3>Staffing Matrix &amp; Tier Analytics</h3><p>Tier-based, seasonal staffing recommendations per club from a year of hourly check-in data, handling US and Canada labor rules. Expanded club classification from 5 to 10 tiers, with KPIs that flag underperforming and anomalous clubs.</p></div>
+<div class="tile"><span class="tag">Personal · extension</span><h3>AI Plank Coach</h3><p>Real-time CV fitness coach with spoken feedback. I extended an open-source repo with a squat analyzer covering rep counting, joint angles, and depth and lean detection.</p><div class="st">OpenCV · MediaPipe Pose</div></div>
+<div class="tile"><span class="tag">Personal · in progress</span><h3>RuView (WiFi CSI sensing)</h3><p>FastAPI + WebSocket dashboard with pose skeleton rendering on simulated data, waiting on ESP32-S3 hardware.</p></div>
+</div>
+</section>
+
+<section class="s" id="github">
+<div class="head"><div class="lbl">Built in<br>the open</div>
+<div><h2 class="big"><b>GitHub</b> — projects</h2><p>Independent projects exploring agentic design and automation with open-source tooling.</p></div></div>
+<div class="tiles">
+<div class="tile"><span class="tag">Public repo</span><h3>Claims Denial-Prevention Agent</h3><p>Multi-agent pipeline with five agents (validation, eligibility, policy retrieval via RAG, denial-risk scoring, resolution). Includes a FastAPI service, tests, Dockerfile and GitHub Actions CI. The XGBoost risk model reaches 0.779 AUC on synthetic data.</p><div class="st">LangGraph · FastAPI · XGBoost · Docker · GitHub Actions</div><a href="https://github.com/veenatanneeru/claims-denial-prevention-agent" target="_blank" rel="noopener">View on GitHub →</a></div>
+<div class="tile"><span class="tag">Public repo · in progress</span><h3>Invoice-to-Payment Automation</h3><p>Extracts invoice data with a local vision model, validates and decides approvals, and queues work through FastAPI and Postgres with a human review page. Role-based API-key auth and a prompt-injection scanner (0 of 11 test attacks succeeded). Extraction scored 60/60 on a hard synthetic set.</p><div class="st">Ollama · FastAPI · Postgres · Docker</div><a href="https://github.com/veenatanneeru/invoice-automation-platform" target="_blank" rel="noopener">View on GitHub →</a></div>
+<div class="tile"><span class="tag">Personal project</span><h3>Multi-Agent Research Assistant</h3><p>LangGraph research agent that combines retrieval, MCP tool integration and orchestrated task execution. A separate FAISS + Ollama (Llama 3.2) React RAG assistant handles document Q&amp;A.</p><div class="st">LangGraph · FastAPI · MCP · RAG · FAISS</div></div>
+</div>
+</section>
+
+<section class="s center" id="experience">
+<small>What I’ve done so far in terms of</small>
+<h2 class="big"><b>Industry</b> – Experiences</h2>
+<div class="rule"></div>
+<div class="tabs"><button class="on" data-t="0">- Unifix Technology -</button><button data-t="1">- Concordia University -</button><button data-t="2">- Amazon -</button></div>
+<div class="panel on"><div class="box"><h3>AI Engineer</h3><div class="when">Unifix Technology · 12/2024 – Present</div><ul><li>Built the Ops Manager Scheduling AI for 134 Planet Fitness clubs with OR-Tools CP-SAT, encoding 75+ business constraints with validation and human approval.</li><li>Developed a Member Feedback Intelligence Platform with hybrid BM25 + semantic retrieval, cross-encoder reranking, RAG evaluation and MCP-based ticket automation. Orchestrated multi-step LangGraph agent workflows with routing, retries, fallbacks and human-in-the-loop controls.</li><li>Automated Matrix &amp; Break Check and RFP analytics with Python/SQL, replacing about 3 hours of daily manual work, and shipped FastAPI/Flask services with validation, audit logging, monitoring and CI/CD.</li></ul></div></div>
+<div class="panel"><div class="box"><h3>Research Assistant, AI/ML</h3><div class="when">Concordia University · 02/2024 – 11/2024</div><ul><li>Built multi-agent and RAG prototypes for document analysis and grounded Q&amp;A, adding output constraints and validation to reduce unsupported responses.</li><li>Created evaluation datasets and regression suites to measure retrieval relevance, factual accuracy and response consistency.</li></ul></div></div>
+<div class="panel"><div class="box"><h3>Data Scientist</h3><div class="when">Amazon · 01/2021 – 11/2023</div><ul><li>Built AWS S3/Glue/PySpark data workflows and SageMaker Pipelines for repeatable training, evaluation and deployment of predictive ML models.</li><li>Developed authenticated REST API integrations with input validation, automated tests and Kafka event workflows, and drove root-cause analysis and regression testing.</li></ul></div></div>
+</section>
+
+<section class="s" id="education">
+<div class="head"><div class="lbl">Where I<br>learned it</div><div><h2 class="big"><b>Education</b> — foundations</h2></div></div>
+<div class="edu" style="margin-top:56px">
+<div class="box"><h3>M.S., Computer &amp; Information Sciences</h3><p>Concordia University Wisconsin · 05/2026</p><p>Data Structures and Algorithms, Data Science, Statistics, Software Engineering, Machine Learning, Data Pipelines</p></div>
+<div class="box"><h3>B.Tech, Computer Science &amp; Engineering</h3><p>Siddhartha Institute of Engineering and Technology, Hyderabad · 05/2022</p><p>OOD, Operating Systems, Computer Networking, AI, Mathematics, Security</p></div>
+</div>
+</section>
+
+<section class="s" id="skills">
+<div class="head"><div class="lbl">Toolbox</div><div><h2 class="big"><b>Skills</b> — what I build with</h2></div></div>
+<div class="skills">
+<div><h3>Generative AI &amp; Agents</h3><p>RAG &amp; GraphRAG, multi-agent systems (LangChain, LangGraph), MCP, tool calling, hybrid retrieval, reranking, guardrails, LLM evaluation (RAGAS), prompt engineering, Ollama</p></div>
+<div><h3>ML, Optimization &amp; Vision</h3><p>PyTorch, TensorFlow, scikit-learn, XGBoost, NLP, OR-Tools CP-SAT, survival analysis, YOLO, OpenCV, MediaPipe</p></div>
+<div><h3>Languages &amp; Frameworks</h3><p>Python, SQL, JavaScript, TypeScript, Java, FastAPI, Flask, React, Pydantic, AsyncIO, REST APIs, API design</p></div>
+<div><h3>Data &amp; Databases</h3><p>PostgreSQL, SQLite, FAISS, Pinecone, ChromaDB, Milvus, Weaviate, ETL/ELT, Airflow, Kafka, PySpark, Medallion architecture</p></div>
+<div><h3>Cloud &amp; DevOps</h3><p>AWS (S3, Glue, Lambda, SageMaker, Bedrock), Azure (OpenAI, AI Search, ML), GCP, Vertex AI, Docker, Kubernetes, Git &amp; GitHub, GitHub Actions, MLflow, CI/CD</p></div>
+<div><h3>Automation / Integrations</h3><p>Gmail and Google Workspace APIs, Apps Script, Mailgun, gspread</p></div>
+</div>
+</section>
+
+<footer id="contact">
+<div><h2 class="big"><b>Veena Tanneeru</b> — AI Engineer / GenAI &amp; Automation</h2><a class="btn" href="mailto:veenasritanneru@gmail.com">Drop an email !</a></div>
+<div><div class="cn">Let’s connect</div><div class="ic"><a href="https://www.linkedin.com/in/veenatanneeru/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/veenatanneeru" target="_blank" rel="noopener">GitHub</a></div></div>
+</footer>
+<div class="end">© Veena Tanneeru</div>
+<button id="top" aria-label="Back to top" onclick="scrollTo({top:0})">⌃</button>
+<div id="dot">See</div>
+<script>
+document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){
+document.querySelectorAll('.tabs button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');
+document.querySelectorAll('.panel').forEach(function(p,i){p.classList.toggle('on',i==b.dataset.t)})})});
+var dot=document.getElementById('dot');
+if(matchMedia('(hover:hover)').matches){
+document.addEventListener('mousemove',function(e){dot.style.left=e.clientX+'px';dot.style.top=e.clientY+'px'});
+document.querySelectorAll('.tile').forEach(function(t){t.addEventListener('mouseenter',function(){dot.style.display='flex'});t.addEventListener('mouseleave',function(){dot.style.display='none'})});}
+</script>
+</body>
+</html>
